@@ -3,11 +3,126 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Partenope Laundry</title>
+  <title>Partenope Laundry – Lavanderia per Hotel & B&B</title>
+  <style>
+    body {
+      margin: 0; font-family: Arial, sans-serif; line-height: 1.6;
+      background: #f9fafb; color: #1e293b;
+    }
+    header {
+      background: #0ea5e9; color: #fff; padding: 20px; text-align: center;
+    }
+    header h1 { margin: 0; font-size: 28px; }
+    header p { margin: 5px 0 0; }
+    nav {
+      background: #0369a1; display: flex; justify-content: center; gap: 15px; padding: 10px;
+    }
+    nav a {
+      color: #fff; text-decoration: none; font-weight: bold;
+    }
+    section {
+      padding: 40px 20px; max-width: 1000px; margin: auto;
+    }
+    h2 {
+      text-align: center; margin-bottom: 20px; color: #0f172a;
+    }
+    .grid {
+      display: grid; grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); gap: 20px;
+    }
+    .card {
+      background: #fff; border-radius: 10px; padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center;
+    }
+    .btn {
+      display: inline-block; background: #0ea5e9; color: #fff;
+      padding: 12px 20px; border-radius: 8px; text-decoration: none;
+      font-weight: bold; margin-top: 10px;
+    }
+    footer {
+      background: #0ea5e9; color: #fff; text-align: center; padding: 15px; margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Benvenuto su Partenope Laundry</h1>
-  <p>Lavanderia per Hotel & B&B</p>
-  <p><a href="https://wa.me/393442704228">Contattaci su WhatsApp</a></p>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Partenope Laundry</h1>
+    <p>Lavanderia Industriale per Hotel & B&B</p>
+  </header>
+
+  <!-- NAVBAR -->
+  <nav>
+    <a href="#servizi">Servizi</a>
+    <a href="#categorie">Categorie</a>
+    <a href="#contatti">Contatti</a>
+  </nav>
+
+  <!-- HERO -->
+  <section>
+    <h2>Benvenuti in Partenope Laundry</h2>
+    <p style="text-align:center; max-width:700px; margin:auto;">
+      Offriamo un servizio di lavanderia industriale con ritiro e consegna puntuale per hotel e B&B. 
+      La tua biancheria sempre perfetta, con qualità garantita.
+    </p>
+    <div style="text-align:center; margin-top:20px;">
+      <a class="btn" href="https://wa.me/39XXXXXXXXXX?text=Ciao%20vorrei%20informazioni%20sui%20servizi%20di%20lavanderia">
+        Contattaci su WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- SERVIZI -->
+  <section id="servizi">
+    <h2>I nostri servizi</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Ritiro & Consegna</h3>
+        <p>Servizio giornaliero di ritiro biancheria sporca e consegna pulita, sempre puntuali.</p>
+      </div>
+      <div class="card">
+        <h3>Lavaggio Professionale</h3>
+        <p>Utilizziamo macchinari industriali e detergenti certificati per garantire igiene e freschezza.</p>
+      </div>
+      <div class="card">
+        <h3>Assistenza Clienti</h3>
+        <p>Supporto dedicato 7 giorni su 7 per gestire urgenze e richieste straordinarie.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORIE -->
+  <section id="categorie">
+    <h2>Categorie trattate</h2>
+    <div class="grid">
+      <div class="card">Asciugamani</div>
+      <div class="card">Bidet</div>
+      <div class="card">Federe</div>
+      <div class="card">Lenzuola matrimoniali</div>
+      <div class="card">Lenzuola singole</div>
+      <div class="card">Accappatoi</div>
+      <div class="card">Teli doccia</div>
+      <div class="card">Scendi bagno</div>
+    </div>
+  </section>
+
+  <!-- CONTATTI -->
+  <section id="contatti">
+    <h2>Contattaci</h2>
+    <p style="text-align:center;">
+      📍 Indirizzo: Inserisci indirizzo qui <br>
+      📧 Email: <a href="mailto:tuamail@mail.com">tuamail@mail.com</a> <br>
+      📱 WhatsApp: <a href="https://wa.me/39XXXXXXXXXX">+39 XXXXX XXXXX</a>
+    </p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© <span id="year"></span> Partenope Laundry - Tutti i diritti riservati</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

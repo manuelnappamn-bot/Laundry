@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NOME_AZIENDA – Lavanderia Industriale per Hotel & B&B</title>
+  <meta name="description" content="Lavanderia B2B per hotel, B&B e strutture ricettive. Ritiro e consegna giornalieri, tracciamento capi e qualità garantita." />
+  <style>
+    :root{
+      --bg:#0ea5e9; --bg-2:#0284c7; --ink:#0f172a; --muted:#475569; --card:#ffffff;
+      --soft:#f1f5f9; --ring:#e2e8f0;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--soft)}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    header{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid var(--ring)}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{font-weight:800;letter-spacing:.2px}
+    .nav a{padding:10px 12px;border-radius:10px}
+    .cta{background:var(--bg);color:#fff;font-weight:700}
+    .hero{background:linear-gradient(135deg,var(--bg),var(--bg-2));color:#fff}
+    .hero .container{padding:56px 24px}
+    .hero h1{margin:0 0 12px;font-size:clamp(28px,4vw,44px);line-height:1.1}
+    .hero p{margin:0 0 20px;max-width:720px;opacity:.95}
+    .btn{display:inline-block;padding:12px 18px;border-radius:12px;font-weight:700}
+    .btn.white{background:#fff;color:#0f172a}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+    .card{background:var(--card);border:1px solid var(--ring);border-radius:16px;padding:16px;box-shadow:0 1px 4px rgba(0,0,0,.06)}
+    h2{font-size:clamp(22px,3vw,28px);margin:0 0 12px}
+    section{padding:36px 0}
+    ul.check{list-style:none;margin:0;padding:0}
+    ul.check li{padding-left:28px;position:relative;margin:8px 0;color:var(--muted)}
+    ul.check li:before{content:"✓";position:absolute;left:0;color:var(--bg);font-weight:900}
+    table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--ring);border-radius:12px;overflow:hidden}
+    th,td{padding:12px;border-bottom:1px solid var(--ring);text-align:left}
+    th{background:#f8fafc}
+    .cols{display:grid;grid-template-columns:1fr;gap:16px}
+    @media(min-width:860px){ .cols{grid-template-columns:2fr 1fr} }
+    footer{background:#fff;border-top:1px solid var(--ring)}
+    .muted{color:var(--muted)}
+    .badge{display:inline-block;padding:6px 10px;border-radius:999px;background:#e0f2fe;color:#075985;font-weight:700;font-size:.85rem}
+    .pill{display:inline-block;padding:6px 10px;border:1px solid var(--ring);border-radius:999px;margin:4px 6px;background:#fff}
+    .section-title{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+    .section-title .dot{width:10px;height:10px;border-radius:50%;background:var(--bg)}
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <header>
+    <div class="container nav">
+      <div class="brand">NOME_AZIENDA</div>
+      <nav>
+        <a href="#servizi">Servizi</a>
+        <a href="#categorie">Categorie</a>
+        <a href="#come-funziona">Come funziona</a>
+        <a href="#contatti" class="cta">Contatti</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <span class="badge">Lavanderia industriale per Hotel & B&B</span>
+      <h1>Ritiro, lavaggio e consegna puntuale. <br/>Controllo qualità, zero pensieri.</h1>
+      <p>Gestiamo biancheria per strutture ricettive con tracciamento giornaliero: asciugamani, federe, lenzuola matrimoniali/singole, accappatoi, teli doccia e scendi bagno.</p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap">
+        <a class="btn white" href="https://wa.me/39XXXXXXXXXX?text=Ciao%20NOME_AZIENDA%2C%20vorrei%20un%20preventivo%20per%20la%20lavanderia%20B2B.">Contattaci su WhatsApp</a>
+        <a class="btn" style="background:#000;color:#fff" href="#contatti">Richiedi preventivo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIZI -->
+  <section id="servizi">
+    <div class="container">
+      <div class="section-title"><span class="dot"></span><h2>Servizi</h2></div>
+      <div class="grid">
+        <div class="card">
+          <h3>Ritiro & Consegna</h3>
+          <p class="muted">Giri programmati giornalieri con bolla di consegna digitale.</p>
+          <ul class="check">
+            <li>Ritiro sporco e consegna pulito</li>
+            <li>Tracciamento per data e cliente</li>
+            <li>Report mensili</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Lavaggio professionale</h3>
+          <p class="muted">Processi e detergenti certificati per il settore ricettivo.</p>
+          <ul class="check">
+            <li>Selezione per tipologia</li>
+            <li>Controllo qualità</li>
+            <li>Confezionamento</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Supporto & Urgenze</h3>
+          <p class="muted">Assistenza rapida e flessibile in alta stagione.</p>
+          <ul class="check">
+            <li>Linee dirette WhatsApp</li>
+            <li>Rinforzi straordinari</li>
+            <li>Reportistica ad hoc</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORIE -->
+  <section id="categorie">
+    <div class="container">
+      <div class="section-title"><span class="dot"></span><h2>Categorie gestite</h2></div>
+      <div>
+        <span class="pill">Asciugamani</span>
+        <span class="pill">Bidet</span>
+        <span class="pill">Federe</span>
+        <span class="pill">Lenzuola matrimoniali</span>
+        <span class="pill">Lenzuola singole</span>
+        <span class="pill">Accappatoi</span>
+        <span class="pill">Teli doccia</span>
+        <span class="pill">Scendi bagno</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- COME FUNZIONA -->
+  <section id="come-funziona">
+    <div class="container cols">
+      <div>
+        <div class="section-title"><span class="dot"></span><h2>Come funziona</h2></div>
+        <ol class="muted" style="padding-left:18px;line-height:1.9">
+          <li>Programmiamo il <b>ritiro</b> della biancheria sporca.</li>
+          <li>In lavanderia, selezione per <b>categoria</b> e lavaggio professionale.</li>
+          <li><b>Consegna</b> del pulito con bolla digitale e riepilogo giornaliero.</li>
+          <li>Report mensile per <b>quantità</b> e <b>totali</b>.</li>
+        </ol>
+        <a class="btn cta" href="https://wa.me/39XXXXXXXXXX?text=Ciao%2C%20vorrei%20organizzare%20un%20ritiro%20di%20prova.">Prova senza impegno</a>
+      </div>
+      <div>
+        <div class="card">
+          <h3>Perché scegliere NOME_AZIENDA</h3>
+          <ul class="check">
+            <li>Ritiri puntuali e flessibili</li>
+            <li>Controllo qualità continuo</li>
+            <li>Supporto dedicato strutture ricettive</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATTI -->
+  <section id="contatti">
+    <div class="container">
+      <div class="section-title"><span class="dot"></span><h2>Contatti</h2></div>
+      <div class="grid">
+        <div class="card">
+          <h3>Parla con noi</h3>
+          <p class="muted">WhatsApp: <a href="https://wa.me/39XXXXXXXXXX" target="_blank">+39 XXXXX XXXXX</a></p>
+          <p class="muted">Email: <a href="mailto:EMAIL@DOMINIO.IT">EMAIL@DOMINIO.IT</a></p>
+          <p class="muted">Indirizzo: INDIRIZZO</p>
+        </div>
+        <div class="card">
+          <h3>Richiedi preventivo</h3>
+          <p class="muted">Invia una mail con:</p>
+          <ul class="check">
+            <li>Tipologia struttura (Hotel/B&B)</li>
+            <li>Volumi medi giornalieri</li>
+            <li>Periodo alta/bassa stagione</li>
+          </ul>
+          <a class="btn" style="background:#111;color:#fff" href="mailto:EMAIL@DOMINIO.IT?subject=Richiesta%20preventivo%20lavanderia%20B2B&body=Ciao%2C%20vorrei%20un%20preventivo...">Invia email</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;padding:18px 24px">
+      <div class="muted">© <span id="y"></span> NOME_AZIENDA</div>
+      <div class="muted"><a href="#contatti">Privacy</a></div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
